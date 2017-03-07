@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: silver;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* BEGIN YOUR STYLES HERE */
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+#header {
+    font-size: 3em;
+    text-align: center;
+    color: red;
+}
+
+#subhead {
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+}
+
+.main-text, h2 {
+    text-align: justify-all;
+    margin-left: 50px;
+    margin-top: auto;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: "Times New Roman";
+    margin-bottom: 10px;
+}
+
+.caption {
+    color: black;
+    font-size: 1em;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.credit {
+    font-weight: 400;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 0px;
+    background-color: white;
+    border: solid red;
+    opacity: 0.5;
+    z-index: 3;
+    display: block;
+}
+
+.photo-container {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+#photo2 {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    /*padding-right: 25%;*/
+    /*padding-left: 25%;*/
+}
+
+
+/*.photo-container2 {
+    width: 100%;
+    position: relative;
+}*/
+
+.text-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify-all;
+    font-size: 1em;
+}
+
+#circle_stress {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 25%;
+    /*must be in percentage or will move on different devices*/
+    left: 70%;
+    /*must be in percentage or will move on different devices*/
+    -webkit-transition: opacity 5s ease-in;
+    -moz-transition: opacity 5s ease-in;
+    -o-transition: opacity 5s ease-in;
+    transition: opacity 5s ease-in;
+}
+
+#circle_stress2 {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 25%;
+    /*must be in percentage or will move on different devices*/
+    left: 70%;
+    /*must be in percentage or will move on different devices*/
+    -webkit-transition: opacity 5s ease-in;
+    -moz-transition: opacity 5s ease-in;
+    -o-transition: opacity 5s ease-in;
+    transition: opacity 5s ease-in;
+}
+
+.info_slides {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 0, 0, .75);
+    /* this is yellow, but with a translucent background */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: 0;
+    /* While dial the z-index down because even if an element doesn't have opacity it still has 'mass'. The info window would get in the way of clicking on the circles without this */
+    transition: opacity .5s ease-in-out;
+    /* this gives us the fade in and fade out effect but only on the opacity element. You cannot use the display property with transitions. */
+}
+
+.info_slides.active {
+    z-index: 4;
+    /* We give the info_slides a higher z-index on active */
+    opacity: 1;
+}
+
+.info_popIn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 70px 15px 30px 15px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    height: 100%;
+    margin-left: 75px;
+    margin-right: 75px;
+    line-height: 2;
+}
+
+.btn_close {
+    position: absolute;
+    font-family: sans-serif;
+    top: 5%;
+    left: 92%;
+    font-size: 2em;
+    color: white;
+    z-index: 4;
+    font-weight: 900;
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
+
+.circle:hover {
+    background-color: gold;
+}
+
+.popIn-info {
+    font-size: 5em;
+    padding: 200px 15px 30px 15px;
+    /*display: none;*/
+}
+
+.btn_close {
+    font-size: 4em;
+}
+
+.btn_close:hover {
+    color: black;
+}
+
+
+}
