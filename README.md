@@ -1,1 +1,1 @@
-# hotspot-image
+# hotspot-image updated
