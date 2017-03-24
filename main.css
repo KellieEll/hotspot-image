@@ -14,7 +14,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
-    background-color: silver;
+    background-color: black;
 }
 
 ol, ul {
@@ -50,26 +50,43 @@ html, body {
     font-size: 3em;
     text-align: center;
     color: red;
+    margin-bottom: .3em;
 }
 
 #subhead {
     font-size: 1.5em;
     text-align: center;
-    color: black;
+    color: gray;
+    margin-bottom: 1em;
 }
 
 .main-text, h2 {
     text-align: justify-all;
     margin-left: 50px;
     margin-top: auto;
-    padding: 10px;
+    /*padding-left: 75px;
+    padding-right: 75px;*/
     font-size: 1.2em;
     font-family: "Times New Roman";
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: gray;
+    line-height: 1.2em;
+}
+
+a, a:visited {
+    color: red;
+}
+
+.byline {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 1em;
+    color: gray;
+    text-align: center;
 }
 
 .caption {
-    color: black;
+    color: white;
     font-size: 1em;
     margin-left: 10px;
     text-align: center;
@@ -117,10 +134,17 @@ img {
 }*/
 
 .text-container {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     text-align: justify-all;
     font-size: 1em;
+}
+
+.map-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: white;
 }
 
 #circle_stress {
@@ -136,12 +160,60 @@ img {
     transition: opacity 5s ease-in;
 }
 
+#commuter_stress2 {
+    position: absolute;
+    top: 70%;
+    /*must be in percentage or will move on different devices*/
+    left: 50%;
+    /*must be in percentage or will move on different devices*/
+    -webkit-transition: opacity 5s ease-in;
+    -moz-transition: opacity 5s ease-in;
+    -o-transition: opacity 5s ease-in;
+    transition: opacity 5s ease-in;
+}
+
+#third_commuter {
+    position: absolute;
+    top: 50%;
+    /*must be in percentage or will move on different devices*/
+    left: 25%;
+    /*must be in percentage or will move on different devices*/
+    -webkit-transition: opacity 5s ease-in;
+    -moz-transition: opacity 5s ease-in;
+    -o-transition: opacity 5s ease-in;
+    transition: opacity 5s ease-in;
+}
+
 #circle_stress2 {
     /*background-color: purple;*/
     position: absolute;
     top: 25%;
     /*must be in percentage or will move on different devices*/
     left: 70%;
+    /*must be in percentage or will move on different devices*/
+    -webkit-transition: opacity 5s ease-in;
+    -moz-transition: opacity 5s ease-in;
+    -o-transition: opacity 5s ease-in;
+    transition: opacity 5s ease-in;
+}
+
+#circle_stress3 {
+    position: absolute;
+    top: 60%;
+    /*must be in percentage or will move on different devices*/
+    left: 70%;
+    /*must be in percentage or will move on different devices*/
+    -webkit-transition: opacity 5s ease-in;
+    -moz-transition: opacity 5s ease-in;
+    -o-transition: opacity 5s ease-in;
+    transition: opacity 5s ease-in;
+}
+
+#circle_stress4 {
+    position: absolute;
+    top: 20%;
+    /*must be in percentage or will move on different devices*/
+    left: 20%;
     /*must be in percentage or will move on different devices*/
     -webkit-transition: opacity 5s ease-in;
     -moz-transition: opacity 5s ease-in;
@@ -174,13 +246,14 @@ img {
     position: absolute;
     top: 0px;
     left: 0px;
-    padding: 70px 15px 30px 15px;
+    padding: .5em;
     font-size: 1.2em;
     text-align: center;
     color: white;
     height: 100%;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
     line-height: 2;
 }
 
@@ -195,17 +268,6 @@ img {
     font-weight: 900;
 }
 
-
-/* Tablet/Desktop overrides */
-
-@media(min-width: 681px) {
-    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-}
-
-@media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
-}
-
 .circle:hover {
     background-color: gold;
 }
@@ -217,7 +279,7 @@ img {
 }
 
 .btn_close {
-    font-size: 4em;
+    font-size: 2em;
 }
 
 .btn_close:hover {
@@ -225,4 +287,29 @@ img {
 }
 
 
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .btn_close {
+        font-size: 4em;
+    }
+    .info_popIn {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: .5em;
+        font-size: 3em;
+        text-align: center;
+        color: white;
+        height: 100%;
+        margin-left: 75px;
+        margin-right: 75px;
+        margin-top: 75px;
+        line-height: 2;
+    }
 }
