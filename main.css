@@ -14,7 +14,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
-    background-color: black;
+    background-color: white;
 }
 
 ol, ul {
@@ -86,7 +86,7 @@ a, a:visited {
 }
 
 .caption {
-    color: white;
+    color: black;
     font-size: 1em;
     margin-left: 10px;
     text-align: center;
@@ -116,6 +116,9 @@ a, a:visited {
 
 img {
     width: 100%;
+    border: 1px solid #021a40;
+    padding: 2px;
+    /*Found this border code online*/
 }
 
 #photo2 {
@@ -187,7 +190,7 @@ img {
 #circle_stress2 {
     /*background-color: purple;*/
     position: absolute;
-    top: 25%;
+    top: 10%;
     /*must be in percentage or will move on different devices*/
     left: 70%;
     /*must be in percentage or will move on different devices*/
@@ -199,9 +202,9 @@ img {
 
 #circle_stress3 {
     position: absolute;
-    top: 60%;
+    top: 70%;
     /*must be in percentage or will move on different devices*/
-    left: 70%;
+    left: 50%;
     /*must be in percentage or will move on different devices*/
     -webkit-transition: opacity 5s ease-in;
     -moz-transition: opacity 5s ease-in;
@@ -211,9 +214,9 @@ img {
 
 #circle_stress4 {
     position: absolute;
-    top: 20%;
+    top: 80%;
     /*must be in percentage or will move on different devices*/
-    left: 20%;
+    left: 70%;
     /*must be in percentage or will move on different devices*/
     -webkit-transition: opacity 5s ease-in;
     -moz-transition: opacity 5s ease-in;
